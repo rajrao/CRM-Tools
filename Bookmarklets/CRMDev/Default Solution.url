@@ -3,7 +3,7 @@ Prop3=19,15
 [InternetShortcut]
 IDList=
 URL=javascript:window.open($('#crmContentPanel iframe:not([style*=\"visibility: hidden\"])')[0].contentWindow.Xrm.Page.context.getClientUrl() + "/tools/solution/edit.aspx?id=%7bfd140aaf-4df4-11dd-bd17-0019b9312238%7d");
-IconFile=http://tesacrm2016/favicon.ico
+IconFile=https://www.microsoft.com/favicon.ico
 IconIndex=1
 HotKey=0
 [Bookmarklet]

@@ -3,7 +3,7 @@ Prop3=19,15
 [InternetShortcut]
 IDList=
 URL=javascript:var form=$("iframe").filter(function(){return $(this).css("visibility")=="visible"})[0].contentWindow;try{form.Mscrm.InlineEditDataService.get_dataService().validateAndFireSaveEvents=function(){return new Mscrm.SaveResponse(5,"")}}catch(e){}var attrs=form.Xrm.Page.data.entity.attributes.get();for(var i in attrs){attrs[i].setRequiredLevel("none")}var contrs=form.Xrm.Page.ui.controls.get();for(var i in contrs){try{contrs[i].setVisible(true);contrs[i].setDisabled(false);contrs[i].clearNotification()}catch(e){}}var tabs=form.Xrm.Page.ui.tabs.get();for(var i in tabs){tabs[i].setVisible(true);tabs[i].setDisplayState("expanded");var sects=tabs[i].sections.get();for(var i in sects){sects[i].setVisible(true)}}
-IconFile=http://tesacrm2016/favicon.ico
+IconFile=https://www.microsoft.com/favicon.ico
 IconIndex=1
 HotKey=0
 [Bookmarklet]
