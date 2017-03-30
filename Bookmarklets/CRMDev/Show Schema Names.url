@@ -1,0 +1,10 @@
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,15
+[InternetShortcut]
+IDList=
+URL=javascript:frames[0].Xrm.Page.ui.controls.forEach(function(a){a.setLabel(a.getName())});
+IconFile=http://tesacrm2016/favicon.ico
+IconIndex=1
+HotKey=0
+[Bookmarklet]
+ExtendedURL=javascript:frames[0].Xrm.Page.ui.controls.forEach(function(a){a.setLabel(a.getName())});

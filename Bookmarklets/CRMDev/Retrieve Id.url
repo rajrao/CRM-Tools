@@ -1,0 +1,16 @@
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,15
+[InternetShortcut]
+IDList=
+URL=javascript: var guid = frames[0].Xrm.Page.data.entity.getId();var str1 = guid.replace(/{/g, "");var copy = str1.replace(/}/g, "");(function () { window.prompt("To Copy: Ctrl+C --- To Exit: Enter or Esc", copy); })();
+IconFile=http://tesacrm2016/favicon.ico
+IconIndex=1
+HotKey=0
+[Bookmarklet]
+ExtendedURL=javascript: var guid = frames[0].Xrm.Page.data.entity.getId();var str1 = guid.replace(/{/g, "");var copy = str1.replace(/}/g, "");(function () { window.prompt("To Copy: Ctrl+C --- To Exit: Enter or Esc", copy); })();
+[InternetShortcut.A]
+[InternetShortcut.W]
+URL=javascript:window.open(+ACQ-(+IBgAIw-crmContentPanel iframe:not(+AFs-style+ACoAPQBcIB0-visibility: hidden+AFwgHQBd-)+IBk-)+AFs-0+AF0-.contentWindow.Xrm.Page.context.getClientUrl() +- +IBw-/tools/solution/edit.aspx?id+AD0AJQ-7bfd140aaf-4df4-11dd-bd17-0019b9312238+ACU-7d+IB0-)+ADs-
+[Bookmarklet.A]
+[Bookmarklet.W]
+ExtendedURL=javascript:window.open(+ACQ-(+IBgAIw-crmContentPanel iframe:not(+AFs-style+ACoAPQBcIB0-visibility: hidden+AFwgHQBd-)+IBk-)+AFs-0+AF0-.contentWindow.Xrm.Page.context.getClientUrl() +- +IBw-/tools/solution/edit.aspx?id+AD0AJQ-7bfd140aaf-4df4-11dd-bd17-0019b9312238+ACU-7d+IB0-)+ADs-
