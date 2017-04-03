@@ -1,0 +1,10 @@
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,15
+[InternetShortcut]
+IDList=
+URL=javascript:window.open($('#crmContentPanel iframe:not([style*=\"visibility: hidden\"])')[0].contentWindow.Xrm.Page.context.getClientUrl() + "/tools/diagnostics/diag.aspx");
+IconFile=https://www.microsoft.com/favicon.ico
+IconIndex=1
+HotKey=0
+[Bookmarklet]
+ExtendedURL=javascript:window.open($('#crmContentPanel iframe:not([style*=\"visibility: hidden\"])')[0].contentWindow.Xrm.Page.context.getClientUrl() + "/tools/diagnostics/diag.aspx");
