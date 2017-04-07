@@ -3,7 +3,7 @@ Prop3=19,15
 [InternetShortcut]
 IDList=
 URL=javascript:frames[0].Xrm.Page.ui.controls.forEach(function(a){a.setLabel(a.getName())});
-IconFile=http://tesacrm2016/favicon.ico
+IconFile=https://www.microsoft.com/favicon.ico
 IconIndex=1
 HotKey=0
 [Bookmarklet]

@@ -2,9 +2,9 @@
 Prop3=19,15
 [InternetShortcut]
 IDList=
-URL=javascript:window.open($('#crmContentPanel iframe:not([style*=\"visibility: hidden\"])')[0].contentWindow.Xrm.Page.context.getClientUrl() + "/main.aspx?pagetype=advancedfind");
-IconFile=http://tesacrm2016/favicon.ico
+URL=javascript:window.open(window.location.origin + "/main.aspx?pagetype=advancedfind&web=true");
+IconFile=https://www.microsoft.com/favicon.ico
 IconIndex=1
 HotKey=0
 [Bookmarklet]
-ExtendedURL=javascript:window.open($('#crmContentPanel iframe:not([style*=\"visibility: hidden\"])')[0].contentWindow.Xrm.Page.context.getClientUrl() + "/main.aspx?pagetype=advancedfind");
+ExtendedURL=javascript:window.open(window.location.origin + "/main.aspx?pagetype=advancedfind&web=true");

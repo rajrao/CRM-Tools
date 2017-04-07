@@ -1,0 +1,10 @@
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,15
+[InternetShortcut]
+IDList=
+URL=javascript:window.open(window.location.origin + "/main.aspx?area=nav_conts&page=SFA&web=true");
+IconFile=https://www.microsoft.com/favicon.ico
+IconIndex=1
+HotKey=0
+[Bookmarklet]
+ExtendedURL=javascript:window.open(window.location.origin + "/main.aspx?area=nav_accts&page=SFA&web=true");
