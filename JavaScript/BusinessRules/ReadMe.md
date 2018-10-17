@@ -6,3 +6,5 @@ There are 2 examples in here:
 
 You can see what the complex business rule look like:
 [![alt text](https://github.com/rajrao/CRM-Tools/blob/master/JavaScript/BusinessRules/New%20business%20rule.png "Complex Business Rule")](https://raw.githubusercontent.com/rajrao/CRM-Tools/master/JavaScript/BusinessRules/New%20business%20rule.png)
+
+Finally, to see how the business rule gets incorporated into the form, see [BusinessRuleJavascriptIncorporationIntoAForm.js](https://github.com/rajrao/CRM-Tools/blob/master/JavaScript/BusinessRules/BusinessRuleJavascriptIncorporationIntoAForm.js)
