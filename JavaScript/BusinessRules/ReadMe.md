@@ -5,4 +5,4 @@ There are 2 examples in here:
 2. A complex business rule: [Complex Business Rule.js](https://github.com/rajrao/CRM-Tools/blob/master/JavaScript/BusinessRules/Complex%20Business%20Rule.js)
 
 You can see what the complex business rule look like:
-![alt text](https://github.com/rajrao/CRM-Tools/blob/master/JavaScript/BusinessRules/New%20business%20rule.png "Complex Business Rule")
+[![alt text](https://github.com/rajrao/CRM-Tools/blob/master/JavaScript/BusinessRules/New%20business%20rule.png "Complex Business Rule")](https://raw.githubusercontent.com/rajrao/CRM-Tools/master/JavaScript/BusinessRules/New%20business%20rule.png)
