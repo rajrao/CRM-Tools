@@ -1,5 +1,6 @@
 //The following shows how the business rule gets injected into a form
 //the business rule itself, just copies the contents from one field into the other. (my_specialfield to name)
+//The unique-id used by the function is the ID of the process record in Dynamics ie, in this the process record id is 8465872f-76d1-e811-a966-000d3a30d0ca
 Mscrm.BusinessRulesScript.Initialize = function() {
     Mscrm.BusinessRulesScript.AttributesOnChangeHandlers = {};
     Mscrm.BusinessRulesScript.ControlsOnClickHandlers = {};
