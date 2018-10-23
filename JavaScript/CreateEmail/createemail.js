@@ -4,8 +4,10 @@ var ai = window.ai || {};
 ai.EmailApi = ai.EmailApi || {};
 
 (function () {
-    var queueId = "314FEB9B-DDC8-E811-A96A-000D3A1BECE3";
-    var accountId = "E5EEDBBD-3CB8-E811-A978-000D3A1BEE29";
+    //update the following to real ids (or get them at run time, if thats what you need).
+    var queueId = "00000000-0000-0000-0000-000000000000";
+    var accountIdTo1 = "00000000-0000-0000-0000-000000000000";
+    var accountIdTo2 = "00000000-0000-0000-0000-000000000000";
 
     this.createEmailMain = function (templateId, objectType, objectId) {
         Xrm.Utility.showProgressIndicator("creating email");
@@ -32,17 +34,23 @@ ai.EmailApi = ai.EmailApi || {};
             participationtypemask : participationTypeMasks.From,
             "partyid_queue@odata.bind" : "/queues("+ queueId+ ")"
         });
+        //setup 2 send-to addresses
         activityParties.push({
             participationtypemask : participationTypeMasks.To,
-            "partyid_account@odata.bind" : "/accounts(" + accountId + ")"
+            "partyid_account@odata.bind" : "/accounts(" + accountIdTo1 + ")"
+        });
+        activityParties.push({
+            participationtypemask : participationTypeMasks.To,
+            "partyid_account@odata.bind" : "/accounts(" + accountIdTo2 + ")"
         });
         
-        //examples of using contacts and systemusers
+        //examples of using contacts        
         // activityParties.push({
         //     participationtypemask : participationTypeMasks.To,
-        //      "partyid_contact@odata.bind" : "/contacts(42935E6D-82C3-E811-A976-000D3A1BEC70)"
+        //      "partyid_contact@odata.bind" : "/contacts(00000000-0000-0000-0000-000000000000)"
         //  });
          
+        //examples of using the current user as the from address
         //  var currentUserId = Xrm.Page.context.getUserId().replace("}", "").replace("{", "");
         //  activityParties.push({
         //     participationtypemask : participationTypeMasks.From,
@@ -127,4 +135,6 @@ ai.EmailApi = ai.EmailApi || {};
 }).call(ai.EmailApi);
 
 //example of how to call it
-//ai.EmailApi.createEmailMain("B0514A7C-449B-E811-A95B-000D3A37870E","incident","E8C656B7-6AD1-E811-A967-000D3A30D5DB");
+//var templateId = "00000000-0000-0000-0000-000000000000";
+//var incidentId = "00000000-0000-0000-0000-000000000000";
+//ai.EmailApi.createEmailMain(templateId,"incident",incidentId);
