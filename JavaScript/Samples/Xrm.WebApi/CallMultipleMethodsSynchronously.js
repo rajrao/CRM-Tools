@@ -31,3 +31,6 @@ var loadData = function (incidentId, consolidatedData) {
 
 ///calling it:
 var consolidatedData = {};
+loadData(objectId, consolidatedData);
+
+//.then(transformTemplate.bind(null, consolidatedData))
