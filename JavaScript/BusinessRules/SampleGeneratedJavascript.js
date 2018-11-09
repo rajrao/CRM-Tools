@@ -1,5 +1,5 @@
 //this is a sample of the javascript that gets generated when you create a business rule.
-//
+//a pbl is a portable business language implementation
 function pbl_92b5bc1d93d1e811a967000d3a30d5db(eventContext) {
 	try {
 		var v0 = (!Mscrm.BusinessRules.Utility.isNull(eventContext) && typeof eventContext.getFormContext === "function") ? eventContext.getFormContext().data.entity : Xrm.Page.data.entity;
