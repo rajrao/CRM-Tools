@@ -20,6 +20,7 @@ Mscrm.BusinessRulesScript.Initialize = function() {
 }
 ;
 
+//pbl stands for Portable Business Logic
 function pbl_8465872f76d1e811a966000d3a30d0ca(eventContext) {
 	try {
 		var v0 = (!Mscrm.BusinessRules.Utility.isNull(eventContext) && typeof eventContext.getFormContext === "function") ? eventContext.getFormContext().data.entity : Xrm.Page.data.entity;
