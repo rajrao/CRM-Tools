@@ -1,4 +1,4 @@
-//represents the Xrm.WebApi functions from the main file
+//represents the Xrm.WebApi functions from the main global.asxh file
 Xrm.WebApi = function() {}
 Xrm.WebApi.getInstance = function() {
     if (Mscrm.InternalUtilities.JSTypes.isNull(Xrm.WebApi.$N)) {
