@@ -1,5 +1,7 @@
 //https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/organization?view=dynamics-ce-odata-9
-//shows how to set enableunifiedinterfaceshellrefresh value as an example of the organization value.
+//example script to update organization settings using web-api. uses enableunifiedinterfaceshellrefresh as an example of the organization
+//value. enableunifiedinterfaceshellrefresh is used to control the new expanded side-bar menu.
+
 var entity = {};
 entity.enableunifiedinterfaceshellrefresh = true;
 
