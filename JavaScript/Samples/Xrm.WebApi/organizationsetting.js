@@ -10,7 +10,7 @@ Xrm.WebApi.online.retrieveMultipleRecords("organization", null).then(
         var organizationid = results.entities[0].organizationid;
 		//console.log(JSON.stringify(results.entities[0]));
 		console.log(results.entities[0].enableunifiedinterfaceshellrefresh);
-		if (results.entities[0].enableunifiedinterfaceshellrefresh == false)
+		if (results.entities[0].enableunifiedinterfaceshellrefresh != entity.enableunifiedinterfaceshellrefresh)
 		{
 			console.log("updating organization " + organizationid);
                         //console.log(`updating organization ${organizationid}`); //interpolation - does not work in ie11
