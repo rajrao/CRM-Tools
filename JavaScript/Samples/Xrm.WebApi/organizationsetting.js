@@ -10,10 +10,11 @@ Xrm.WebApi.online.retrieveMultipleRecords("organization", null).then(
 		console.log(results.entities[0].enableunifiedinterfaceshellrefresh);
 		if (results.entities[0].enableunifiedinterfaceshellrefresh == false)
 		{
-			console.log(`updating organization ${organizationid}`);
+			console.log("updating organization " + organizationid);
+                        #console.log(`updating organization ${organizationid}`); //interpolation - does not work in ie11
 			Xrm.WebApi.online.updateRecord("organization", organizationid, entity).then(
 				function success(result) {
-					console.log(`successfully updated organization ${organizationid}`);
+					console.log("successfully updated organization " + organizationid);
 					var updatedEntityId = result.id;
 				},
 				function(error) {
@@ -23,7 +24,7 @@ Xrm.WebApi.online.retrieveMultipleRecords("organization", null).then(
 		}
 		else
 		{
-			console.log(`organization enableunifiedinterfaceshellrefresh is already set ${results.entities[0].enableunifiedinterfaceshellrefresh}`);
+			console.log("organization enableunifiedinterfaceshellrefresh is already set " + results.entities[0].enableunifiedinterfaceshellrefresh);
 		}
     },
     function(error) {
