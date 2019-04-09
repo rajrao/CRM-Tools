@@ -18,6 +18,15 @@ entity.attributes.get("customerid").setValue(
       }]);
 
 
+//get the control:
+eventContext.getFormContext().ui.controls.get("customerid");
+//disable and visibility done on control:
+eventContext.getFormContext().ui.controls.get("customerid").setDisabled(true);//disables the control
+eventContext.getFormContext().ui.controls.get("customerid").setVisible(false);//hides the control
+//alternative way to get attribute, when you have control: 
+eventContext.getFormContext().ui.controls.get("customerid").getAttribute()
+
+
 //get an optionset:
 //entity.attributes.get("customerid").getAttributeType(); //returns optionset;
 entity.attributes.get("optionset_attributefield").getValue();    //returns the int code value
