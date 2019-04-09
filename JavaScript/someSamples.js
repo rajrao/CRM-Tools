@@ -1,3 +1,4 @@
+//if eventContext is not available, use: Xrm.Page for getFormContext and Xrm.Page.context for context
 var entity = eventContext.getFormContext().data.entity;
 
 //get data about a lookup:
