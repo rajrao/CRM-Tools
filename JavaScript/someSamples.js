@@ -1,6 +1,7 @@
 var entity = eventContext.getFormContext().data.entity;
 
 //get data about a lookup:
+//entity.attributes.get("customerid").getAttributeType(); //returns "lookup";
 var attributeLookup = entity.attributes.get("customerid").getValue()[0];
 //attributeLookup return an object of type{entityType: "name", id: "{GUID}", name: "string"};
 var id = attributeLookup.id;
@@ -18,7 +19,11 @@ entity.attributes.get("customerid").setValue(
 
 
 //get an optionset:
+//entity.attributes.get("customerid").getAttributeType(); //returns optionset;
 entity.attributes.get("optionset_attributefield").getValue();    //returns the int code value
+entity.attributes.get("optionset_attributefield").getText();     //return the text displayed to the user.
+
+//set an optionset
 entity.attributes.get("optionset_attributefield").setValue(1000000);    //where 1000000 is a valid optionset value
 
 
