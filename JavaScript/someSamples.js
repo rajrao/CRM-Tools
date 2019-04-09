@@ -15,3 +15,10 @@ entity.attributes.get("customerid").setValue(
         name:"A new account by raj12",
         entityType: "account"
       }]);
+
+
+//get an optionset:
+entity.attributes.get("optionset_attributefield").getValue();    //returns the int code value
+entity.attributes.get("optionset_attributefield").setValue(1000000);    //where 1000000 is a valid optionset value
+
+
