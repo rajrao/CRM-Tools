@@ -4,7 +4,9 @@
 //the sample is for accounts
 //the sample uses promises
 //this code has been tested with Dynamics v9.2 and in Chrome and IE11
-
+//The reason I like to use promises is that it can
+//Make your code more readable, especially, when you need to do things after other
+//Async methods. In that case, just chain multiple then({....})
 
 function executeFetchXml(entityPluralName, fetchXml) {
 	var promise = new Promise(function (resolve, reject) {
@@ -49,7 +51,7 @@ executeFetchXml('accounts',fetchXml)
 .then(function (responseData) {
 	console.log("then!");
 	console.log(responseData[0].accountid);
-})
+})  //Chain multiple .then({....}) here. Each one will be sequentially called
 .catch(function (error) {
 	console.log("error!");
 	console.log(error);
