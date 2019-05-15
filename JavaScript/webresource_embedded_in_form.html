@@ -1,0 +1,57 @@
+<head>
+  <!-- 
+  This file shows you how to setup an html web resource file that is going to be embedded into a form and how to interact with
+  the parent form and get data from the form, etc.
+  -->
+	<script src="ClientGlobalContext.js.aspx" type="text/javascript" />
+	<script type="text/javascript">
+		document.onreadystatechange = function () {
+			if (document.readyState == "complete") {
+				doSomeStuff(new Date());
+			}
+		}
+
+		function doSomeStuff(header) {
+			debugger;
+			document.getElementById('header').innerHTML = header;
+			document.getElementById('location.search').innerHTML = location.search;
+
+			var globalContext = GetGlobalContext();
+			var asString = JSON.stringify(globalContext);
+			console.log(asString);
+
+			var parameters = globalContext.getQueryStringParameters();
+			var recordid = parameters.id;
+			var entityname = parameters.typename;
+			document.getElementById('queryStringParameters').innerHTML = JSON.stringify(parameters);
+
+			//note about using Xrm.Page, when Xrm.Page is deprecated. This is supported, see link below.
+			/*
+			https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated
+			Although Xrm.Page is deprecated, parent.Xrm.Page will continue to work in case of HTML web resources embedded in forms as this is the only way to access the form context from the HTML web resource
+			 */
+			document.getElementById('data.parent').innerHTML = parent.window.Xrm.Page.data.entity.attributes.get("ncm_name").getValue();
+			document.getElementById('data.parent2').innerHTML = parent.window.Xrm.Page.getAttribute('ncm_name').getValue();
+		}
+
+		//# sourceURL=dynamicScript.js
+	</script>
+</head>	
+<body>
+	<button onclick="doSomeStuff('Button' + (new Date())">Test Me!</button>
+	time: <div id='header'/>
+	<br/>
+
+	<!-- ?OrgLCID=1033&UserLCID=1033&id=%7b5BE5C314-7676-E911-A95A-000D3A3B9A2B%7d&orgname=orgc8a5341a&type=10395&typename=account -->
+	location.search: <div id='location.search'/>
+	<br/>
+
+	<!-- {"OrgLCID":"1033","UserLCID":"1033","id":"{5BE5C314-7676-E911-A95A-000D3A3B9A2B}","orgname":"orgc8a5341a","type":"10395","typename":"account"} -->
+	queryStringParameters: <div id='queryStringParameters'/>
+	<br/>
+
+	data.parent: <div id='data.parent'/>
+	<br/>
+	data.parent2: <div id='data.parent2'/>
+	<br/>
+</body>
