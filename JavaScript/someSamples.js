@@ -39,31 +39,3 @@ entity.attributes.get("optionset_attributefield").getText();     //return the te
 
 //set an optionset
 entity.attributes.get("optionset_attributefield").setValue(1000000);    //where 1000000 is a valid optionset value
-
-
-function OpenANewEntityFormWithSomeFieldsFilledOut(ribbonExecutionContext)
-{
-	debugger;
-	console.log("MethodCalledFromRibbon called");
-	var form = ribbonExecutionContext;
-	var entityFormOptions = {};
-	entityFormOptions["entityName"] = "someEntity";
-
-	var formParameters = {};
-	var entityRef = form.getAttribute("anEntityIdField").getValue();
-	if (entityRef !== null)
-	{
-		formParameters["anEntityIdField"] = entityRef;
-		// Open the form.
-		Xrm.Navigation.openForm(entityFormOptions, formParameters).then(
-			function (success) {
-				console.log(success);
-			},
-			function (error) {
-				console.log(error);
-			});
-	}
-}
-
-
-
