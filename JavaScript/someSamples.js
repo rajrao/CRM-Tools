@@ -1,7 +1,9 @@
 //if eventContext is not available, use: Xrm.Page for getFormContext and Xrm.Page.context for context
 var entity = eventContext.getFormContext().data.entity;
-//if context is sent from Ribbon, then the formContext is the eventContext passed to the function. This is different from the eventContext 
-//that is sent from a formEvent.
+//if context is sent from Ribbon, then the formContext is the eventContext passed to the function called from the ribbon.
+//if the context is sent from a Ribbon on the home page of the entity or from a sub-grid, then call getFormContext.
+//if the context is sent to a function directly invoked because of an event on the form, then you have to call getFormContext() to get the formContext.
+
 
 entity.getAttribute(“customerid”).fireOnChange();
 
