@@ -2,7 +2,7 @@
 Prop3=19,15
 [InternetShortcut]
 IDList=
-URL=javascript: for(i=0;i<frames.length;i++){try{if(frames[i].Xrm.Page.ui!==null){frm=frames[i];break;}}catch{continue;}} if(frm!==null){frm.Xrm.Page.ui.controls.forEach(function(a){a.setLabel(a.getName())});}
+URL=javascript: for(i=0;i<frames.length;i++){try{if(frames[i].Xrm.Page.ui.controls!==null){frm=frames[i];break;}}catch{continue;}} if(frm!==null){frm.Xrm.Page.ui.controls.forEach(function(a){a.setLabel(a.getName())});}
 IconFile=https://www.microsoft.com/favicon.ico
 IconIndex=1
 HotKey=0
