@@ -1,0 +1,91 @@
+{
+    "name": "cdm",
+    "description": "cdm",
+    "version": "1.0",
+    "entities": [{
+            "$type": "LocalEntity",
+            "name": "site",
+            "description": "site",
+            "annotations": [],
+            "attributes": [{
+                    "name": "id",
+                    "dataType": "int64"
+                }, {
+                    "name": "created",
+                    "dataType": "dateTime"
+                }, {
+                    "name": "createdBy",
+                    "dataType": "string"
+                }, {
+                    "name": "dbVersion",
+                    "dataType": "int64"
+                }, {
+                    "name": "lastModified",
+                    "dataType": "dateTime"
+                }, {
+                    "name": "lastModifiedBy",
+                    "dataType": "string"
+                }, {
+                    "name": "name",
+                    "dataType": "string"
+                }, {
+                    "name": "webSite",
+                    "dataType": "string"
+                }, {
+                    "name": "eid",
+                    "dataType": "int64"
+                }, {
+                    "name": "lid",
+                    "dataType": "int64"
+                }, {
+                    "name": "notes",
+                    "dataType": "string"
+                }, {
+                    "name": "xid",
+                    "dataType": "int64"
+                }, {
+                    "name": "language_id",
+                    "dataType": "int64"
+                }, {
+                    "name": "code",
+                    "dataType": "string"
+                }, {
+                    "name": "zipCode",
+                    "dataType": "string"
+                }, {
+                    "name": "zip4Code",
+                    "dataType": "string"
+                }, {
+                    "name": "latitude",
+                    "dataType": "decimal"
+                }, {
+                    "name": "longitude",
+                    "dataType": "decimal"
+                }, {
+                    "name": "timezone",
+                    "dataType": "string"
+                }, {
+                    "name": "mid",
+                    "dataType": "int64"
+                }, {
+                    "name": "RN",
+                    "dataType": "int64"
+                }
+            ],
+            "partitions": [{
+                    "name": "main",
+                    "location": "https://xxxxxxxxxx.dfs.core.windows.net/container/path/to/file/dataFile.csv",
+                    "fileFormatSettings": {
+                        "$type": "CsvFormatSettings",
+                        "columnHeaders": true,
+                        "delimiter": ",",
+                        "quoteStyle": "QuoteStyle.Csv",
+                        "csvStyle": "CsvStyle.QuoteAlways",
+                        "encoding": "UTF-8"
+                    },
+                    "annotations": []
+                }
+            ]
+        }
+    ]
+}
