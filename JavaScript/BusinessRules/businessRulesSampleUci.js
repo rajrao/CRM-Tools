@@ -20,7 +20,7 @@ function pbl_36105587a349e911a957000d3a3b9825(eventContext) {
             v9 = v9 + '36105587-a349-e911-a957-000d3a3b9825SetMessageStep1\x3b';
         }
         var v10 = [{
-            'CId': 'ncm_enddate',
+            'CId': 'cmp_enddate',
             'SId': '36105587-a349-e911-a957-000d3a3b9825SetMessageStep1'
         }];
         for (var i = 0; i < v10.length; i++) {
